@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Team</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo&display=swap">
+  <style>
+    body {
+      font-family: "Archivo", sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    .team-container-wrapper {
+      background-color: #f6f6f6;
+      padding: 20px 0;
+    }
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap; /* Allow cards to wrap to a new line on small screens */
+      justify-content: center; /* Center the cards horizontally */
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .team-member {
+      flex: 0 0 40%; /* Each card takes 40% width on large screens */
+      background-color: #ffffff;
+      font-family: "Archivo", sans-serif;
+      border-radius: 5px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      margin: 20px; /* Reduced the margin on large screens */
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .team-member-img-wrapper {
+      width: 180px;
+      height: 180px;
+      overflow: hidden;
+      border-radius: 01%; /* Create a circular shape for the wrapper */
+      margin: 0 auto;
+    }
+
+    .team-member img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .team-member h3 {
+      font-size: 22px;
+      font-family: "Archivo", sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .team-member .gold-line-container {
+      width: 100%;
+      border-top: 2px solid #a19276;
+      margin: 10px 0;
+    }
+
+    .team-member p {
+      font-size: 18px;
+      color: #555555;
+      margin-bottom: 15px;
+    }
+
+    .view-profile-btn {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #000;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: normal;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .view-profile-btn:hover {
+      background-color: #333;
+    }
+
+    /* Media queries for responsiveness */
+
+    @media (max-width: 768px) {
+      .team-member {
+        flex: 0 0 80%; /* Each card takes 80% width on small screens */
+        margin: 10px; /* Adjust the margin on small screens */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="team-container-wrapper">
+    <div class="team-container">
+      <div class="team-member">
+        <div class="team-member-img-wrapper">
+          <img src="https://i2.moxi.onl/img-pr/a/2e55f682-e98e-4c32-aaee-3e658f2ab8c2/0_2_full.jpg" alt="John Doe">
+        </div>
+        <h3>Tammy Teeuwen</h3>
+        <div class="gold-line-container"></div>
+        <p>Owner / Broker of Record</p>
+        <a href="https://maplecityrealty.c21.ca/directory/agents/tammy-teeuwen" class="view-profile-btn">View Profile</a>
+      </div>
+
+      <div class="team-member">
+        <div class="team-member-img-wrapper">
+          <img src="https://i2.moxi.onl/img-pr/a/7c5f63c9-ff71-4219-ba8d-27f30936a452/0_4_full.jpg" alt="Jane Smith">
+        </div>
+        <h3>Anne Baird</h3>
+        <div class="gold-line-container"></div>
+        <p>Owner / REALTOR®</p>
+        <a href="https://maplecityrealty.c21.ca/directory/agents/anne-baird" class="view-profile-btn">View Profile</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
